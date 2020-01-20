@@ -1,4 +1,4 @@
-var orm = require("./config/sequelize.js");
+const orm = require("./config/sequelize.js");
 
 
 orm.selectAndOrder("", "", "");
