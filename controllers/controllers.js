@@ -8,11 +8,11 @@ const sellers = require("../models/sellers.js");
 
 router.get("/", function(req, res) {
   buyers.all(function(data) {
-    const hbsObject = {
+    const handlebars = {
       buyers: data
     };
-    console.log(hbsObject);
-    res.render("index", hbsObject);
+    console.log(handlebars);
+    res.render("index", handlebars);
   });
 });
 
@@ -22,14 +22,14 @@ router.post("/api/", function(req, res) {
   });
 });
 
-router.put("/api/cats/:id", function(req, res) {
+router.put("/api//:id", function(req, res) {
   const condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 
-  cat.update(
+  .update(
     {
-      sleepy: req.body.sleepy
+      : req.body.
     },
     condition,
     function(result) {

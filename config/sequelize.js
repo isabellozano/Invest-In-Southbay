@@ -2,7 +2,7 @@ const connection = require("./connection.js");
 
 const orm = {
   selectWhere: function(tableInput, colToSearch, valOfCol) {
-    const queryString = "SELECT * FROM property_management WHERE ?? = ?";
+    const queryString = "SELECT * FROM ?? WHERE ?? = ?";
     connection.query(queryString, [tableInput, colToSearch, valOfCol], function(err, result) {
       if (err) throw err;
       console.log(result);
