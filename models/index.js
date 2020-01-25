@@ -1,3 +1,5 @@
+const sequelize = require("../config/sequelize.js");
+
 "use strict";
 
 const fs = require("fs");
