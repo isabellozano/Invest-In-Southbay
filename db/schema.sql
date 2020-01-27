@@ -9,7 +9,7 @@ CREATE TABLE contacts
 	first_name varchar(50) NOT NULL,
 	last_name varchar(50) NOT NULL,
 	email varchar(50) NOT NULL,
-	phone_number INT(50) NOT NULL,
+	phone_number varchar(50) NOT NULL,
 	userId varchar(50) NOT NULL,
 	PRIMARY KEY (id)
 );
@@ -36,4 +36,12 @@ CREATE TABLE users
 	PRIMARY KEY (id)
 );
 
-INSERT INTO contacts (first_name, last_name, email, phone_number, userId) VALUES ('Jill', 'Jones', 'jill.jones@email.com', (555) 123-1212, 098765);
+INSERT INTO contacts (first_name, last_name, email, phone_number, userId) 
+VALUES ('Jill', 'Jones', 'jill.jones@email.com', 5551231212, 98765);
+
+INSERT INTO search_properties (single_family_home, condo, duplex, triplex, fourplex, apartment_building) 
+VALUES ('Happy Home', 'Cool Condo', 'Daunty Duplex', 'The Triplex', '4plex Property', 'Apart Building');
+
+INSERT INTO users (username, passwrd, email, search_properties_id) 
+VALUES ('someuser789', 'p@33w0rd', 'some.user@email.com', 'propertyID_789');
+
