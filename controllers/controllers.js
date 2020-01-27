@@ -1,14 +1,12 @@
 const express = require("express");
-
 const router = express.Router();
-
-const cat = require("../models/contact.js");
+const contact = require("../models/contact.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  cat.all(function(data) {
+  contact.all(function(data) {
     const hbsObject = {
-      cats: data
+      contact: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
