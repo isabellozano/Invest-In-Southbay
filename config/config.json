@@ -1,7 +1,7 @@
 {
     "development": {
       "username": "root",
-      "password": "pwisthepassword",
+      "password": "",
       "database": "investInSouthBay_db",
       "host": "127.0.0.1",
       "dialect": "mysql"
