@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const contact = require("../models/contact.js");
+const contact = require("../models/contacts.js/index.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {

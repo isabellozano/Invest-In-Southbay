@@ -39,30 +39,30 @@ module.exports = db;
 
 const sequelize = require("../config/sequelize.js");
 
-const user = {
+const contact = {
   all: function(cb) {
-    sequelize.all("users", function(res) {
+    sequelize.all("contact info", function(res) {
       cb(res);
     });
   },
 
   create: function(cols, vals, cb) {
-    sequelize.create("users", cols, vals, function(res) {
+    sequelize.create("contact info", cols, vals, function(res) {
       cb(res);
     });
   },
 
   update: function(objColVals, condition, cb) {
-    sequelize.update("users", objColVals, condition, function(res) {
+    sequelize.update("contact info", objColVals, condition, function(res) {
       cb(res);
     });
   },
   
   delete: function(condition, cb) {
-    sequelize.delete("users", condition, function(res) {
+    sequelize.delete("contact info", condition, function(res) {
       cb(res);
     });
   }
 };
 
-module.exports = user;
+module.exports = contact;
