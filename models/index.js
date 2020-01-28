@@ -1,3 +1,5 @@
+const sequelize = require("../config/sequelize.js");
+
 "use strict";
 
 const fs = require("fs");
@@ -34,3 +36,33 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
+
+const sequelize = require("../config/sequelize.js");
+
+const user = {
+  all: function(cb) {
+    sequelize.all("??", function(res) {
+      cb(res);
+    });
+  },
+
+  create: function(cols, vals, cb) {
+    sequelize.create("??", cols, vals, function(res) {
+      cb(res);
+    });
+  },
+
+  update: function(objColVals, condition, cb) {
+    sequelize.update("??", objColVals, condition, function(res) {
+      cb(res);
+    });
+  },
+  
+  delete: function(condition, cb) {
+    sequelize.delete("??", condition, function(res) {
+      cb(res);
+    });
+  }
+};
+
+module.exports = user;

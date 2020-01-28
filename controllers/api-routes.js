@@ -14,8 +14,8 @@ module.exports = function(app) {
     res.json(tableData);
   });
 
-  app.get("/api/waitlist", function(req, res) {
-    res.json(waitListData);
+  app.get("/api/index", function(req, res) {
+    res.json(index);
   });
 
   // API POST Requests

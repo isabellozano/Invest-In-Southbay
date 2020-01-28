@@ -1,22 +1,20 @@
 const express = require("express");
-
 const router = express.Router();
-
-const cat = require("../models/contact.js");
+const contact = require("../models/contacts.js/index.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  cat.all(function(data) {
+  contact.all(function(data) {
     const hbsObject = {
-      cats: data
+      contact: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
-router.post("/api/cats", function(req, res) {
-  cat.create([
+router.post("/api/", function(req, res) {
+  contact.create([
     "name", "sleepy"
   ], [
     req.body.name, req.body.sleepy
@@ -26,12 +24,12 @@ router.post("/api/cats", function(req, res) {
   });
 });
 
-router.put("/api/cats/:id", function(req, res) {
+router.put("/api//:id", function(req, res) {
   const condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 
-  cat.update({
+  contact.update({
     sleepy: req.body.sleepy
   }, condition, function(result) {
     if (result.changedRows == 0) {
@@ -43,7 +41,7 @@ router.put("/api/cats/:id", function(req, res) {
   });
 });
 
-router.delete("/api/cats/:id", function(req, res) {
+router.delete("/api//:id", function(req, res) {
   const condition = "id = " + req.params.id;
 
   cat.delete(condition, function(result) {
