@@ -8,6 +8,7 @@
     },
     "production": {
       "use_env_variable": "",
+      "database": "investInSouthBay_db",
       "dialect": "mysql"
     }
   }
