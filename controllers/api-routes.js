@@ -10,11 +10,11 @@ module.exports = function(app) {
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-  app.get("/api/", function(req, res) {
-    res.json(tableData);
+  app.get("/api/cloudcma", function(req, res) {
+    res.json();
   });
 
-  app.get("/api/index", function(req, res) {
+  app.get("/api/", function(req, res) {
     res.json(index);
   });
 
