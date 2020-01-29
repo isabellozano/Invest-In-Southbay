@@ -2,7 +2,7 @@ const connection = require("./connection.js");
 
 const sequelize = {
   selectWhere: function(tableInput, colToSearch, valOfCol) {
-    const queryString = "SELECT * FROM ?? WHERE ?? = ?";
+    const queryString = "SELECT * FROM investInSouthBay_db WHERE ?? = ?";
     connection.query(queryString, [tableInput, colToSearch, valOfCol], function(err, result) {
       if (err) throw err;
       console.log(result);
@@ -16,7 +16,7 @@ const sequelize = {
       console.log(result);
     });
   },
-  findWhoHasMost: function(tableOneCol, tableTwoForeignKey, tableOne, tableTwo) {
+  findCustomers: function(tableOneCol, tableTwoForeignKey, tableOne, tableTwo) {
     const queryString =
       "SELECT ??, COUNT(??) AS count FROM ?? LEFT JOIN ?? ON ??.??= ??.id GROUP BY ?? ORDER BY count DESC LIMIT 1";
 
