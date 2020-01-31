@@ -18,5 +18,11 @@ module.exports = function(app) {
   });
 
     res.json({ ok: true });
-  });
-};
+}
+
+  $.ajax({
+    url: "https://zillowdimashirokovv1.p.rapidapi.com/GetChart.htm",
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+});
