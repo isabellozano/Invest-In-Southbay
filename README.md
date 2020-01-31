@@ -5,13 +5,13 @@ Real Estate Application
 _A Full-Stack Real Estate Web Application_
 
 ## Overview
-This is a full-stack web application that uses the MVC paradigm and a server side API. This app was designed to give the Client a 2.0 version of his exisiting real estate investment company, _InvestInSouthBay.com_, this web app provides functionality by combining the the following links onto one page
+This is a full-stack web application that uses the MVC paradigm and a server side API. This app was designed to give the Client a 2.0 version of his exisiting real estate investment company, _InvestInSouthBay.com_, this web app provides functionality by combining the the following links: What's My Home Worth, Sell My Home, Find Me A Home, and Property Management onto one page.
 
-The build-out of the updated 2.0 version of the CLient's already exisiting website: was designed to be completed in two Phases:
+NOTE: The build-out of the updated 2.0 version of the Client's already exisiting website was designed to be completed in two phases:
 
-Phase One consisted of adding functionality 
+_Phase One_ consisted of adding website functionality and linking four pages onto one landing page, the Home page. 
 
-Phase Two involves future development of the app's HTML and CSS features along with an IDX Property Search Tool (To be provided by the Client). 
+_Phase Two_ involves future development of the app's HTML and CSS features, including adding a framework such as _Laravel_, _Angular_, _Ruby on Rails_, or _Django_. _P2_ will also include adding an API - IDX Property Search Tool as well as a Commercial Property page (Each to be provided by the Client). 
 
 
 ## Deployed to Heroku at:
@@ -21,24 +21,37 @@ Phase Two involves future development of the app's HTML and CSS features along w
 
 Co-Project Managers: Isabel Gomez and Tywunda Shivers
 
-Collaborators: Isabel Gomez and Tywunda Shivers
+Collaborators: Isabel Gomez, Tywunda Shivers, and Yug Gurung
 
 Secondary Repository Initialized by: Isabel Gomez 
 
-## Team Member Responsibilities and Task Completed Within Project
+## _Team Try IT Yourself_  Member Responsibilities and Task Completed Within Project
 
-Tywunda Shivers:
-Isabel Gomez:
+Tywunda Shivers: Model - 
 
-Respectively _Team IT_ 
+Yug Gurung: View -
+
+Isabel Gomez: Control -
 
 ## Application Requirements
 
 Server-Side APIs
 
 
-## Depenedencies 
-This web application uses pre-existing code provided by xxxxxxxx as well as the following dependencies:
+## Depenedencies and DevDependencies
+This web application uses pre-existing code, dev and dependencies initilized by David Miller (http://davidmiller.io along with the following dev and dependencies initialized by _Team Try IT Yourself_ (For additional dependencies not listed SEE package.json):
+
+"express": "^4.17.1"
+
+"jquery": "3.4.1"
+
+"jquery.easing": "^1.4.1"
+
+"mysql2": "^2.1.0"
+
+"sequelize": "^4.41.2"
+
+ "eslint": "^6.8.0",
 
 
 ## Credits
@@ -51,6 +64,10 @@ Omar Patel - UCLA Extension Lead Intructor and Student Support
 Irwing Gameros - UCLA Extension TA and Project Handler
 
 Julio Valdez and Peter Park - UCLA Extension TAs and Student Support
+
+Mark Steadman - UCLA Extension Tutorial Services
+
+Andy Suarez - UCLA Extension 2019-2020 Cohort Student 
 
 
 ## License
@@ -77,5 +94,6 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-# Invest-In-Southbay
+## GitHub Repository: Invest-In-Southbay
+
 
